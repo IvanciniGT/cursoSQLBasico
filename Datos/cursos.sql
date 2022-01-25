@@ -107,7 +107,7 @@ INSERT INTO Cursos (Id,Titulo,Duracion, Importe)
 INSERT INTO Cursos (Id,Titulo,Duracion, Importe) 
     VALUES ( 4, "Netflix Avanzado", 50, 8500.99);
 INSERT INTO Cursos (Id,Titulo,Duracion, Importe) 
-    VALUES ( 5, "SQL Básico", 20, 1000.05);
+    VALUES ( 5, "SQL Medio", 20, 1000.05);
 INSERT INTO Cursos (Id,Titulo,Duracion, Importe) 
     VALUES ( 6, "JAVA Básico", 50, 995);
 INSERT INTO Cursos (Id,Titulo,Duracion, Importe) 
@@ -147,25 +147,18 @@ INSERT INTO Empresas (Id,Nombre, CIF)
     VALUES ( 11, "BICICLETA", "A12345666");
 
 
-
-
-
-
-
-
-
 INSERT INTO Personas (Id,Nombre, Apellidos, DNI, Email, EmpresaId) 
-    VALUES ( 1, "Iván", "Osuna Ayuste", 23000, "ivan.osuna.ayuste@gmail.com", 1);
+    VALUES ( 1, "Iván", "Osuna Ayuste", 23000, "ivan.osuna.ayuste@gmail.com", NULL );
 INSERT INTO Personas (Id,Nombre, Apellidos, DNI, Email, EmpresaId) 
     VALUES ( 2, "Mario", "Novi Rod", 00296666, "novirod@gmail.com", 7);
-INSERT INTO Personas (Id,Nombre, Apellidos, DNI, Email, EmpresaId) 
-    VALUES ( 3, "Juan", "Garcia Garcia", 2346800, "Juan.Garcia@gmail.com", 2);
+INSERT INTO Personas (Id,Nombre, Apellidos, DNI, Email) 
+    VALUES ( 3, "Juan", "Garcia Garcia", 2346800, "Juan.Garcia@gmail.com");
 INSERT INTO Personas (Id,Nombre, Apellidos, DNI, Email, EmpresaId) 
     VALUES ( 4, "Mateusz Aleksander", "Duda", 3694485, "mateusz.aleksander@gmail.com", 2);
 INSERT INTO Personas (Id,Nombre, Apellidos, DNI, Email, EmpresaId) 
     VALUES ( 5, "Manuel", "Cantos Sanjuan", 7777777, "mcantos@gmail.com", 1);
 INSERT INTO Personas (Id,Nombre, Apellidos, DNI, Email, EmpresaId) 
-    VALUES ( 6, "Marta", "Pérez Arribas", 05844692, "marta.perez.arribas@gmail.com", 2);
+    VALUES ( 6, "Marta", "Pérez Arribas", 05844692, "marta.perez.arribas@gmail.com", NULL);
 INSERT INTO Personas (Id,Nombre, Apellidos, DNI, Email, EmpresaId) 
     VALUES ( 7, "Vicente", "Codina Soler", 30000, "vcs@gmail.com", 3);
 INSERT INTO Personas (Id,Nombre, Apellidos, DNI, Email, EmpresaId)
