@@ -62,7 +62,7 @@ CREATE TABLE Cursos (
     Titulo VARCHAR(100) NOT NULL,
     Duracion TINYINT NOT NULL,          -- 1 byte
     Importe DOUBLE (6,2) NOT NULL       -- 9999.99
-) ENGINE INNODB;
+) ENGINE INNODB; 
 
 -- Tablas
 CREATE TABLE Empresas (
