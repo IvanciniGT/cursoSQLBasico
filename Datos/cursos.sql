@@ -199,3 +199,5 @@ INSERT INTO Inscripciones (CursoId, PersonaId, Fecha, Aprobado)
     VALUES (11, 11, "2022-04-12", 1);
 INSERT INTO Inscripciones (CursoId, PersonaId, Fecha, Aprobado) 
     VALUES (1, 11, "2022-01-05", 0);
+
+CREATE INDEX IDX_Nombres ON Personas(Nombre);
