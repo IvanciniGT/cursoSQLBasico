@@ -196,7 +196,7 @@ INSERT INTO Inscripciones (CursoId, PersonaId, Fecha, Aprobado)
 INSERT INTO Inscripciones (CursoId, PersonaId, Fecha, Aprobado) 
     VALUES (10, 2, "2021-11-12", 1);
 INSERT INTO Inscripciones (CursoId, PersonaId, Fecha, Aprobado) 
-    VALUES (11, 11, "2022-04-12", 1);
+    VALUES (11, 11, "2021-04-12", 1);
 INSERT INTO Inscripciones (CursoId, PersonaId, Fecha, Aprobado) 
     VALUES (1, 11, "2022-01-05", 0);
 

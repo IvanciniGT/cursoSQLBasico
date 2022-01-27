@@ -13,3 +13,10 @@ WHERE
   Personas.Nombre LIKE "I_a%" 
     -- Para escapar carcteres especiales una contrabarra \_ \%
 ;
+
+
+
+BBDD Irlanda 0
+
+    Web alojada en España que ataca a esa BBDD 1.... 0
+        Web accedo desde china
