@@ -29,7 +29,10 @@ SELECT
 FROM 
   Personas
   INNER JOIN Empresas ON Empresas.Id = Personas.EmpresaId
-UNION 
+UNION -- Implican un DISTINCT -> ORDER BY -- En su lugar , 
+-- UNION ALL no hace un DISTINCT es decir NO ELIMINA DUPLICADOS
+-- UN UNION ALL ES MUY RAPIDO, a diferencia de un UNION
+-- De hecho en todos los ejemplos e este fichero podriamos haber utilizado un UNION ALL
 SELECT 
   Personas.Id,
   Personas.Nombre,
@@ -80,7 +83,6 @@ UNION
 SELECT
   Empresas.Nombre,
   Empresas.CIF as NIF,
-  "AAA" as NumeroPedido,
   Sum(Cursos.Importe) as Total
 FROM
   Empresas
