@@ -62,7 +62,7 @@ SELECT
   Cursos.Titulo AS Curso,
   CONCAT(Personas.Nombre , " ", Personas.Apellidos) AS Persona,
   DATE_FORMAT(Inscripciones.Fecha,"%d/%m/%Y") AS Fecha,
-  Persona.ID IN (SELECT PersonaId FROM Antiguos)
+  Personas.ID IN (SELECT PersonaId FROM Antiguos)
 FROM
   Personas
   INNER JOIN Inscripciones ON Personas.Id = Inscripciones.PersonaId

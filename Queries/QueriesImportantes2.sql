@@ -15,7 +15,7 @@ FROM
   Personas
   INNER JOIN Inscripciones ON Personas.Id = Inscripciones.PersonaId
   INNER JOIN Cursos ON Inscripciones.CursoId = Cursos.Id
-  LEFT OUTER JOIN ANTIGUOS ON Personas.Id = Antiguos.PersonaId
+  LEFT OUTER JOIN Antiguos ON Personas.Id = Antiguos.PersonaId
 WHERE
 --  Inscripciones.PersonaId IN 
 --    (SELECT Antiguos.PersonaId FROM Antiguos) AND 
