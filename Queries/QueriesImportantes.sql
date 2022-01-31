@@ -43,3 +43,31 @@ WHERE
   MONTH(Inscripciones.Fecha) = MONTH(NOW()) AND
   YEAR(Inscripciones.Fecha)  = YEAR(NOW()) 
 ;
+
+-- Igual que arri con VIEW
+
+CREATE VIEW ANTIGUOS AS
+SELECT 
+   Inscripciones.PersonaId
+FROM 
+   Inscripciones 
+WHERE
+   Inscripciones.Fecha < STR_TO_DATE(
+     CONCAT("01-",MONTH(NOW()),"-",YEAR(NOW())),"%d-%m-%Y"
+   );
+
+--
+
+SELECT 
+  Cursos.Titulo AS Curso,
+  CONCAT(Personas.Nombre , " ", Personas.Apellidos) AS Persona,
+  DATE_FORMAT(Inscripciones.Fecha,"%d/%m/%Y") AS Fecha,
+  Persona.ID IN (SELECT PersonaId FROM Antiguos)
+FROM
+  Personas
+  INNER JOIN Inscripciones ON Personas.Id = Inscripciones.PersonaId
+  INNER JOIN Cursos ON Inscripciones.CursoId = Cursos.Id
+WHERE
+  MONTH(Inscripciones.Fecha) = MONTH(NOW()) AND
+  YEAR(Inscripciones.Fecha)  = YEAR(NOW()) 
+;
